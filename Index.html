@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MS Buster</title>
+
+  <style></style>
+  <link rel="stylesheet" href="#">
+  <script>
+    function siteLink(){
+      console.alert("Please login first");
+    }
+  </script>
+
+  <!--Bootstrap link for CSS and JavaScript-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-success">
+
+  <!--Dismissable Alert-->
+  <!-- <div class="alert alert-info alert-dismissible fade show" role="alert">
+    <strong>Congratulations!</strong> You have successfully entered the details.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div> -->
+
+  <!--Nav Bar Code-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="mx-3" src="./MS Buster.jpg" alt="" width="30" height="24"
+          class="d-inline-block align-text-top">MS Buster</img>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <!-- Example single danger button -->
+            <div class="btn-group">
+              <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Action
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Youtube</a></li>
+                <li><a class="dropdown-item" href="#">Social Media</a></li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Support</a></li>
+                <li><a class="dropdown-item" href="#">Write for me</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+      <button class="btn btn-danger mx-2" type="submit" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign
+        Up</button>
+      <button class="btn btn-danger mx-1" type="submit" data-bs-toggle="modal"
+        data-bs-target="#LoginModal">Login</button>
+    </div>
+  </nav>
+
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="signUpModalLabel">Sign Up to create account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3 row">
+            <label for="staticEmail" class="col-form-label" align="center">Email Address</label><br>
+            <input type="email" class="form-control" id="inputEmail">
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-form-label" align="center">Password</label><br>
+            <input type="password" class="form-control" id="inputPassword">
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-form-label" align="center">Confirm Password</label><br>
+            <input type="password" class="form-control" id="inputPassword">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#">
+            <button type="button" class="btn btn-primary">Submit</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="LoginModalLabel">Login to your account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Scroll Image div-->
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./image01.jpg" width="100%" height="500px" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>MS Buster</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vehicula.</p>
+          <a href="https://www.youtube.com/channel/UCoAHvVUBiuMZmRig1vbHsJg"><button type="button"
+              class="btn btn-danger">Youtube</button></a>
+          <a href="https://www.facebook.com/salih.tanveer/"><button type="button"
+              class="btn btn-warning">Facebook</button></a>
+          <a href="https://www.instagram.com/mohtaram.salihhashmi/"><button type="button"
+              class="btn btn-success">Instagram</button></a>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./image02.jpg" width="100%" height="500px" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>MS Buster</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vehicula.</p>
+          <a href="https://www.youtube.com/channel/UCoAHvVUBiuMZmRig1vbHsJg"><button type="button"
+              class="btn btn-danger">Youtube</button></a>
+          <a href="https://www.facebook.com/salih.tanveer/"><button type="button"
+              class="btn btn-warning">Facebook</button></a>
+          <a href="https://www.instagram.com/mohtaram.salihhashmi/"><button type="button"
+              class="btn btn-success">Instagram</button></a>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./image03.JPG" width="100%" height="500px" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>MS Buster</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vehicula.</p>
+          <a href="https://www.youtube.com/channel/UCoAHvVUBiuMZmRig1vbHsJg"><button type="button"
+              class="btn btn-danger">Youtube</button></a>
+          <a href="https://www.facebook.com/salih.tanveer/"><button type="button"
+              class="btn btn-warning">Facebook</button></a>
+          <a href="https://www.instagram.com/mohtaram.salihhashmi/"><button type="button"
+              class="btn btn-success">Instagram</button></a>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--Breadcrum code-->
+  <nav class="bg-dark" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb text-light p-2 mx-3">
+      <li class="breadcrumb-item text-light"><a href="#">Home</a></li>
+      <li class="breadcrumb-item text-light" aria-current="page"><a href="#">Library</a></li>
+      <li class="breadcrumb-item active text-light" aria-current="page"><a href="#">Data</a></li>
+      <span class="badge bg-warning mx-3">New</span>
+    </ol>
+  </nav>
+
+  <!--Cards-->
+  <div class="container">
+    <div class="row mb-2 my-2 ">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static bg-light">
+            <strong class="d-inline-block mb-2 text-primary">Software Engineer</strong>
+            <h3 class="mb-0">University Life</h3>
+            <div class="mb-1 text-muted">Nov 12, 2019</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              content.</p>
+            <a href="#" class="stretched-link" onclick="siteLink">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="./Thumb1.jpg" class="bd-placeholder-img" width="200" height="250"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></img>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static bg-light">
+            <strong class="d-inline-block mb-2 text-success">Traveller</strong>
+            <h3 class="mb-0">Travel History</h3>
+            <div class="mb-1 text-muted">Oct 15. 2022</div>
+            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to content.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="./Thumb2.jpg" class="bd-placeholder-img" width="200" height="250"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></img>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static bg-light">
+            <strong class="d-inline-block mb-2 text-danger">Early Life</strong>
+            <h3 class="mb-0">College Life</h3>
+            <div class="mb-1 text-muted">Nov 12, 2019</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              content.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="./image04.jpg" class="bd-placeholder-img" width="200" height="250"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></img>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static bg-light">
+            <strong class="d-inline-block mb-2 text-success">Traveller</strong>
+            <h3 class="mb-0">Travelogues</h3>
+            <div class="mb-1 text-muted">Oct 15. 2022</div>
+            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to content.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="./Thumb2.jpg" class="bd-placeholder-img" width="200" height="250"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></img>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Footer Code-->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-2 border-top bg-dark">
+    <div class="col-md-4 d-flex align-items-center mx-3">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-light text-decoration-none lh-1">
+        <img class="bi" src="./MS Buster.jpg" width="30" height="24">
+      </a>
+      <span class="mb-3 mb-md-0 text-light">© 2022 Company, Inc</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex mx-3">
+      <li class="ms-3"><a class="text-muted" href="#"><img src="./facebook.png" class="bi" width="25px"
+            height="25px"></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><img src="./Instagram.jpg" class="bi" width="25px"
+            height="25px"></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><img src="./twitter.png" class="bi" width="25px"
+            height="25px"></a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>

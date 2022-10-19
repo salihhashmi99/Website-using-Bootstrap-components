@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <!--CSS and JavaScript Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <!--Nav Bar Code-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="mx-3" src="./Images/MS Buster.jpg" alt="" width="30" height="24"
+          class="d-inline-block align-text-top">MS Buster</img>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="Index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="About.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <!-- Example single danger button -->
+            <div class="btn-group">
+              <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Action
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Youtube</a></li>
+                <li><a class="dropdown-item" href="#">Social Media</a></li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Support</a></li>
+                <li><a class="dropdown-item" href="#">Write for me</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+      <button class="btn btn-danger mx-2" type="submit" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign
+        Up</button>
+      <button class="btn btn-danger mx-1" type="submit" data-bs-toggle="modal"
+        data-bs-target="#LoginModal">Login</button>
+    </div>
+  </nav>
+
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="signUpModalLabel">Sign Up to create account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3 row">
+            <label for="staticEmail" class="col-form-label" align="center">Email Address</label><br>
+            <input type="email" class="form-control" id="inputEmail">
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-form-label" align="center">Password</label><br>
+            <input type="password" class="form-control" id="inputPassword">
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-form-label" align="center">Confirm Password</label><br>
+            <input type="password" class="form-control" id="inputPassword">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#">
+            <button type="button" class="btn btn-primary">Submit</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="LoginModalLabel">Login to your account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Features Code-->
+    <div class="container my-2">
+        <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading fw-normal lh-1">First featurette heading. It’ll blow your mind.</h2>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing 
+                elit. Mauris dictum condimentum mauris in pretium. Sed vulputate 
+                sem ut pellentesque varius. Nullam facilisis dolor turpis, a 
+                eleifend elit posuere non. Aenean euismod metus nibh. Morbi 
+                dictum, dui in lobortis porta, ligula turpis aliquam augue, a 
+                scelerisque ante quam ullamcorper orci. Ut molestie quam et leo 
+                bibendum, id egestas orci egestas. Ut ut libero dictum, suscipit 
+                mauris non, gravida lacus. Vivamus vitae consequat nulla.</p>
+            </div>
+            <div class="col-md-5">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+            </div>
+          </div>
+    </div>
+
+    <div class="row featurette mx-3">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+        <p class="lead">
+          Lorem ipsum dolor sit amet, consectetur adipiscing 
+          elit. Mauris dictum condimentum mauris in pretium. Sed vulputate 
+          sem ut pellentesque varius. Nullam facilisis dolor turpis, a 
+          eleifend elit posuere non. Aenean euismod metus nibh. Morbi 
+          dictum, dui in lobortis porta, ligula turpis aliquam augue, a 
+          scelerisque ante quam ullamcorper orci. Ut molestie quam et leo 
+          bibendum, id egestas orci egestas. Ut ut libero dictum, suscipit 
+          mauris non, gravida lacus. Vivamus vitae consequat nulla.
+        </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      </div>
+    </div>
+
+   <!--Footer Code-->
+   <footer class="py-4 my-2 bg-dark">
+    <div class="row mx-3">
+      <div class="col-6 col-md-2 mb-3 text-light">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3 text-light">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3 text-light">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3 text-light">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of what's new and exciting from us.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-md-4 d-flex align-items-center mx-3">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-light text-decoration-none lh-1">
+        <img class="bi" src="Images/MS Buster.jpg" width="30" height="24">
+      </a>
+      <span class="mb-3 mb-md-0 text-light">© 2022 Company, Inc</span>
+    </div>
+  </footer>
+
+    
+  </body>
+</html>
